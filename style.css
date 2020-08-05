@@ -1,0 +1,216 @@
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*HTML SETUP ---------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+* {
+    margin: "0";
+    padding: "0";
+}
+
+html {
+    background-color: azure;
+    font-family: 'lato','arial',sans-serif;
+    font-size: 20px;
+    color: #555555;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*REUSEABKE COMPONENT*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size:240%;
+    color:aliceblue;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    
+}
+
+h2{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+
+/*-----------------paragrahs-----------------------------------*/
+.icon-big{
+    font-size: 300%;
+    color: #e67e22;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*BUTTON*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+        border-radius: 200px;
+    color: aliceblue;
+    margin-right: 30px;
+    transition: background-color 0.2s, border 
+}
+
+
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    color: aliceblue;
+    border-radius: 200px;
+    border:  1px solid #e67e22;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #82450f;
+}
+.btn-full:hover,
+.btn-full:active{
+    background-color: #82450f;
+    color: aliceblue;
+    border-radius: 200px;
+    border:  1px solid #e67e22;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*HEADER*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.71)) , url(img/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+        background-position: center;
+    }
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 35px;
+  
+    
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 5px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*MEALS*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+.section-meal{
+
+    padding: 0;
+}
+
+
+.meal-showcase{
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.meal-showcase li{
+    margin: 0;
+    float: left;
+    width: 25%;
+        
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+       transition: 0.5s;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+ 
+        
+}
